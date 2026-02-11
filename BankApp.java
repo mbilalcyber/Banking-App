@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
  *
  * @author Bilal
  * @version beta 0.1
- * @since 2026.02.05
+ * @since 2026.02.09
  * @see <GitHub URL>
  */
 public class BankApp {
