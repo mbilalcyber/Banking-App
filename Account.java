@@ -82,6 +82,10 @@ public class Account {
         this.lastName = lastName;
     }
 
+    /**
+     *
+     * @param amount
+     */
     public void deposit (double amount) {
 
         if (amount <= 0 ){
@@ -92,6 +96,20 @@ public class Account {
 
 
     }
+
+    public void withdrawl (double amount) {
+
+        if (amount <= 0 ){
+
+            throw new IllegalArgumentException ("Invalid Amount");
+        } else if (amount > this.balance) {
+            throw new IllegalArgumentException("Invalid Amount");
+        }
+        this.balance -= amount;
+
+
+    }
+
 
 
 
