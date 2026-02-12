@@ -53,6 +53,21 @@ public class Account {
         return this.balance;
     }
 
+    /**
+     *
+     * @param firstName
+     */
+
+    public void setFirstName(String firstName) {
+
+        if (firstName == null || firstName.trim().isEmpty() ) {
+
+            throw new IllegalArgumentException("First Name Can't be Empty" + id);
+
+        }
+        this.firstName = firstName;
+    }
+
 
 
 }
