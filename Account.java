@@ -18,7 +18,9 @@ public class Account {
     private double balance;
 
 
-
+    /**
+     *
+     */
     public Account() {
 
         this.id = ++lastId;
@@ -41,5 +43,16 @@ public class Account {
         setLastName(lastName);
 
     }
+
+    /**
+     *
+     * @return
+     */
+    public double getBalance() {
+
+        return this.balance;
+    }
+
+
 
 }
