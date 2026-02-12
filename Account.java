@@ -70,9 +70,9 @@ public class Account {
 
     /**
      *
-     * @param LastName
+     * @param lastName
      */
-    public void setLastName(String LastName) {
+    public void setLastName(String lastName) {
 
         if (lastName == null || lastName.trim().isEmpty() ) {
 
@@ -81,6 +81,18 @@ public class Account {
         }
         this.lastName = lastName;
     }
+
+    public void deposit (double amount) {
+
+        if (amount <= 0 ){
+
+            throw new IllegalArgumentException ("Account Balance Can't be less than 0");
+        }
+        this.balance += amount;
+
+
+    }
+
 
 
 
