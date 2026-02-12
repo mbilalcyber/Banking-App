@@ -68,6 +68,21 @@ public class Account {
         this.firstName = firstName;
     }
 
+    /**
+     *
+     * @param LastName
+     */
+    public void setLastName(String LastName) {
+
+        if (lastName == null || lastName.trim().isEmpty() ) {
+
+            throw new IllegalArgumentException("Last Name Can't be Empty" + id);
+
+        }
+        this.lastName = lastName;
+    }
+
+
 
 
 }
