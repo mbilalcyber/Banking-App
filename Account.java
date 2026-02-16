@@ -97,6 +97,10 @@ public class Account {
 
     }
 
+    /**
+     *
+     * @param amount
+     */
     public void withdrawl (double amount) {
 
         if (amount <= 0 ){
@@ -111,6 +115,14 @@ public class Account {
     }
 
 
+    /**
+     * Returns this account as text.
+     *
+     * @return formatted account text
+     */
+    public String toString() {
+        return "ID#: " + this.id + " | Name: " + this.firstName + " " + this.lastName;
+    }
 
 
 
