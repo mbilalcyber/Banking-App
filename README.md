@@ -46,7 +46,7 @@ All user input is validated to ensure correct formatting and logical consistency
 
 ### 🔹 Successful Deposit
 
- ![depositsuccess.png](out/assets/depositsuccess.png)
+ ![depositsuccess.png](assets/depositsuccess.png)
 
 ### 🔹 Withdrawal Validation Error
 
