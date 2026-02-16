@@ -108,7 +108,7 @@ public class Account {
 
             throw new IllegalArgumentException("You have a lot of 0 dollars but we can't let you withdraw emm.");
         } else if (amount > this.balance) {
-            throw new IllegalArgumentException("Deposit something first please.");
+            throw new IllegalArgumentException("Invalid Amount.");
         }
         this.balance -= amount;
 
