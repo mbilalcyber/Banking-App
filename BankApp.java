@@ -4,10 +4,10 @@ import java.util.regex.Pattern;
 /**
  * The Bank App. Used to test the Account class.
  *
- * @author Bilal
+ * @author Muhammad Bilal
  * @version beta 0.1
  * @since 2026.02.09
- * @see <GitHub URL>
+ * @see <https://github.com/mbilalcyber/Banking-App.git>
  */
 public class BankApp {
     /**
