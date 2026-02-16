@@ -9,7 +9,7 @@ public class Account {
      * The unique account number used by the default account number.
      */
 
-    private final int id = 0;  //
+    private final int id;  //
 
     private String firstName;
 
@@ -19,7 +19,7 @@ public class Account {
 
 
     /**
-     *
+     * Creates an account with default values.
      */
     public Account() {
 
@@ -47,7 +47,7 @@ public class Account {
 
     /**
      *Allow retrieval of the current amount balance
-     * @return
+     * @return account balance
      */
     public double getBalance() {
 
@@ -56,7 +56,7 @@ public class Account {
 
     /**
      * Allows setting the account owners first name but only if it's not blank.
-     * @param firstName
+     * @param firstName owner's first name
      */
 
     public void setFirstName(String firstName) {
@@ -71,7 +71,7 @@ public class Account {
 
     /**
      * Allow setting of the account owners last name.
-     * @param lastName
+     * @param lastName owner's last name
      */
     public void setLastName(String lastName) {
 
@@ -85,13 +85,13 @@ public class Account {
 
     /**
      * Allows making a deposit for amounts greater than zero.
-     * @param amount
+     * @param amount to deposit
      */
     public void deposit(double amount) {
 
         if (amount <= 0) {
 
-            throw new IllegalArgumentException("Account Balance Can't be less than 0");
+            throw new IllegalArgumentException("Haha!! You think you can fool me?");
         }
         this.balance += amount;
 
@@ -100,15 +100,15 @@ public class Account {
 
     /**
      *Allows making a deposit for amounts greater than zero and NOT greater than the account balance.
-     * @param amount
+     * @param amount to withdraw
      */
-    public void withdrawl(double amount) {
+    public void withdrawal (double amount) {
 
         if (amount <= 0) {
 
-            throw new IllegalArgumentException("Invalid Amount");
+            throw new IllegalArgumentException("You have a lot of 0 dollars but we can't let you withdraw emm.");
         } else if (amount > this.balance) {
-            throw new IllegalArgumentException("Invalid Amount");
+            throw new IllegalArgumentException("Deposit something first please.");
         }
         this.balance -= amount;
 
